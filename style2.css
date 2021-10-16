@@ -1,0 +1,132 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url(../Brackets%202/web6.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.menu-bar{
+    background: rgb(0,100,0);
+    text-align: right;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+ 
+}
+.active,.menu-bar ul li:hover{
+    background-color: #2bab0d;
+    border-radius: 3px;
+    transition: 0.7s ease;
+    
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+    
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    transition: 0.7s ease;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;    
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 70px;
+    
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.7s ease;
+}
+.btn:hover{
+    background:rgb(0,150,0);
+    color: #000;
+}
+.theam{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    min-height: 100vh;
+    position: fixed;
+    top: 15%;
+    left: 95%;
+}
+input[type="checkbox"]{
+    -webkit-appearance:none;
+    visibility: hidden;
+    display: none;
+}
+.check{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: #092c3e;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.7s;   
+}
+input[type="checkbox"]:checked~.check{
+    
+    .menu-bar ul{
+        background:none;
+        color: #000;
+        
+    }
+}
